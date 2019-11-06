@@ -1,0 +1,124 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>
+        Editar Processo
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="icon" type="image/x-ico" href="/assets/favicon.ico"/>
+
+    <link rel="stylesheet" href="/assets/bootstrap.css?compile=false" />
+    <link rel="stylesheet" href="/assets/grails.css?compile=false" />
+    <link rel="stylesheet" href="/assets/main.css?compile=false" />
+    <link rel="stylesheet" href="/assets/mobile.css?compile=false" />
+    <link rel="stylesheet" href="/assets/application.css?compile=false" />
+
+
+
+    <meta name="layout" content="main"/>
+
+
+
+</head>
+
+<body>
+<script>
+    $(document).ready(function(){
+        alert("Ola")
+    });</script>
+
+<nav class="navbar navbar-expand-lg navbar-dark navbar-static-top" role="navigation">
+    <a class="navbar-brand" href="/#"><img src="/assets/grails.svg" alt="Grails Logo"/></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" aria-expanded="false" style="height: 0.8px;" id="navbarContent">
+        <ul class="nav navbar-nav ml-auto">
+
+        </ul>
+    </div>
+
+</nav>
+
+
+<a href="#edit-processo" class="skip" tabindex="-1">Skip to content&hellip;</a>
+<div class="nav" role="navigation">
+    <ul>
+        <li><a class="home" href="/">Principal</a></li>
+        <li><a href="/processo/index" class="list">Processo Listagem</a></li>
+        <li><a href="/processo/create" class="create">Novo Processo</a></li>
+    </ul>
+</div>
+<div id="edit-processo" class="content scaffold-edit" role="main">
+    <h1>Editar Processo</h1>
+
+
+    <form id="form" action="http://localhost:8080/processo/update/1" method="post" ><input type="hidden" name="_method" value="PUT" id="_method" />
+        <input type="hidden" name="version" value="2" id="version" />
+        <fieldset class="form">
+            <div class='fieldcontain required'>
+                <label for='justificativa'>Justificativa
+                    <span class='required-indicator'>*</span>
+                </label><input type="text" name="justificativa" value="Abertura" required="" id="justificativa" />
+            </div><div class='fieldcontain required'>
+            <label for='status'>Status
+                <span class='required-indicator'>*</span>
+            </label><input type="text" name="status" value="Cancelado" required="" id="status" />
+        </div>
+        </fieldset>
+        <fieldset class="buttons">
+            <input class="save" type="submit" value="Alterar" />
+        </fieldset>
+    </form>
+</div>
+
+
+<div class="footer row" role="contentinfo">
+    <div class="col">
+        <a href="http://guides.grails.org" target="_blank">
+            <img src="/assets/advancedgrails.svg" alt="Grails Guides" class="float-left"/>
+        </a>
+        <strong class="centered"><a href="http://guides.grails.org" target="_blank">Grails Guides</a></strong>
+        <p>Building your first Grails app? Looking to add security, or create a Single-Page-App? Check out the <a href="http://guides.grails.org" target="_blank">Grails Guides</a> for step-by-step tutorials.</p>
+
+    </div>
+    <div class="col">
+        <a href="http://docs.grails.org" target="_blank">
+            <img src="/assets/documentation.svg" alt="Grails Documentation" class="float-left"/>
+        </a>
+        <strong class="centered"><a href="http://docs.grails.org" target="_blank">Documentation</a></strong>
+        <p>Ready to dig in? You can find in-depth documentation for all the features of Grails in the <a href="http://docs.grails.org" target="_blank">User Guide</a>.</p>
+
+    </div>
+
+    <div class="col">
+        <a href="https://grails-slack.cfapps.io" target="_blank">
+            <img src="/assets/slack.svg" alt="Grails Slack" class="float-left"/>
+        </a>
+        <strong class="centered"><a href="https://grails-slack.cfapps.io" target="_blank">Join the Community</a></strong>
+        <p>Get feedback and share your experience with other Grails developers in the community <a href="https://grails-slack.cfapps.io" target="_blank">Slack channel</a>.</p>
+    </div>
+</div>
+
+
+<div id="spinner" class="spinner" style="display:none;">
+    Loading&hellip;
+</div>
+
+<script type="text/javascript" src="/assets/jquery-3.3.1.min.js?compile=false" ></script>
+<script type="text/javascript" src="/assets/bootstrap.js?compile=false" ></script>
+<script type="text/javascript" src="/assets/popper.min.js?compile=false" ></script>
+<script type="text/javascript" src="/assets/application.js?compile=false" ></script>
+
+<script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+
+</body>
+</html>
+
